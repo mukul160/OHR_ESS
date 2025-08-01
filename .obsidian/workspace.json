@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 210.5
+    "width": 200
   },
   "right": {
     "id": "eb98add806409494",
@@ -172,7 +172,7 @@
   "lastOpenFiles": [
     "Module_2/Flashing The Blue Pill With A Cheap STLink Clone.md",
     "Module_2/Learning Outcomes.md",
-    "Module_2/P1_Choosing a Microcontroller Family..md",
+    "Module_2/P1_Choosing a Microcontroller Family.md",
     "Module_2/P2_Introduction to the Embedded Toolchain.md",
     "Module_2/P3_Introduction to the STM32CubeIDE.md",
     "Module_2/P4_Becoming Familiar With the Embedded Workflow.md",
