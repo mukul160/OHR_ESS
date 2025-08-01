@@ -673,7 +673,7 @@ If you're okay with spending $30, you can find a genuine programmer [here.](http
 
 OR
 
-Check out [this guide](Flashing%20The%20Blue%20Pill%20With%20A%20Cheap%20ST-Link%20Clone) to learn how you can flash your Blue Pill without the STM32CubeIDE.
+Check out [this guide](Flashing%20The%20Blue%20Pill%20With%20A%20Cheap%20STLink%20Clone.md) to learn how you can flash your Blue Pill without the STM32CubeIDE.
 
 ### *Important note on flashing the BP
 Before running the ST-Flash write, place your boot jumper to position 1 so that the BP can be pulled to its flash mode. When flashing is done, place the boot jumper back to position 0 and hit the reset button on the BP. The flashed binary will then start executing.

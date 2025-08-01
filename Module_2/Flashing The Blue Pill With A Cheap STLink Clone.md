@@ -128,6 +128,6 @@ For a deep-dive, visit the [official stlink tutorial], [project repo], or practi
 
 With these steps, you can reliably program STM32 microcontrollers using cheap ST-Link V2 clones with the `st-flash` utility on any platform.
 
-[Back to Part 5](P5%20-%20Embedded%20Engineering%20In%20Practice)
+[Back to Part 5](P5_Embedded%20Engineering%20In%20Practice.md)
 
 ---
