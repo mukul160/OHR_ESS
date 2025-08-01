@@ -69,7 +69,7 @@
 - RP2040 Datasheet: https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf
 - ATmega328 Datasheet: https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf
 
-**Note: The ATmega Datasheet does not showcase the typical DIP package found on Arduinos, probably because it is legacy documentation; it is linked here: https://docs.arduino.cc/retired/hacking/hardware/ATMEGA328P/
+**Note: The ATmega Datasheet does not showcase the typical DIP package found on Arduinos, probably because it is legacy documentation; it is linked here: https://docs.arduino.cc/retired/hacking/hardware/ATMEGA328P/**
 
 ## Decision-Making Flowchart
 
@@ -83,16 +83,19 @@
 1. This is the STM32F407 Discovery board. It is the board which will serve as our testbed throughout this course. 
 
 ![STM32](assets/STM32F4_Discovery_(9067300323).jpg)
+
 *Figure: The STM32F407VGT6 Discovery Board*
 
 2. RPi Pico: This is an incredibly powerful board in its own right, particularly because it allows programming in micro python.
 
 ![RP2040](assets/Raspberry_Pi_Pico_oblique.jpg)
+
 *Figure: The RPi Pico*
 
 3. Below is the humble Arduino Uno. It is an 8 bit unit and has served hobbyists for 2 decades now.
 
 ![Arduino](assets/Arduino_Uno_002.jpg)
+
 *Figure: Everyone's favorite blue Lego brick.*
 
 ---
