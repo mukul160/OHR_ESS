@@ -18,6 +18,11 @@ Whether you're a student, an engineer returning to the basics, or a robotics ent
 
 > All content is structured in **progressive modules** with annotated code examples and original diagrams.
 
+**Click here to jump to your desired module!**
+<a href="Module_1/Learning%20Outcomes.md">Module 1 - Thinking Like an Embedded Engineer</a>
+<a href="Module_2/Learning%20Outcomes.md">Module 2 - Talking to Hardware</a>
+
+
 ---
 ## Course Structure
 
@@ -38,7 +43,7 @@ Whether you're a student, an engineer returning to the basics, or a robotics ent
 
 All custom diagrams and screenshots are stored in the `assets/` folder and are used throughout the course with context.
 
-- `/assets – conceptual illustrations (registers, memory maps, toolchain)
+- `/assets – conceptual illustrations (registers, memory maps, toolchain)`
 
 ---
 ## Getting Started
