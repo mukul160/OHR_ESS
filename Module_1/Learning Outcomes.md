@@ -7,6 +7,7 @@
   <li><a href="P5_ToolchainOverview.md">P5_ToolchainOverview</a></li>
   <li><a href="CodeExamples.md">CodeExamples</a></li>
 </ul>
+
 ---
 
 # Learning Outcomes – Module 1: Foundations of Bare-Metal Programming
