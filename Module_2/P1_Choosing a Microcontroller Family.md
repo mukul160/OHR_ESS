@@ -25,8 +25,7 @@
 | Learning Curve               | Some MCUs are more beginner-friendly than others                   | Arduino (AVR) has lowest barrier to entry           |
 | Ecosystem                    | Dev boards, libraries, third-party tools                           | ST has Nucleo boards; RP2040 uses TinyUSB, Pico SDK |
 
-![Table](assets/ComparisionTable.png)
-*Figure: Comparision chart for 3 popular MCUs*
+![Table](assets/ComparisionTable.png)*Figure: Comparision chart for 3 popular MCUs*
 
 ## Popular Microcontroller Families at a Glance
 
