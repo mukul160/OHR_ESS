@@ -128,7 +128,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     - In the timer’s parameters, set:
         - **Prescaler:** 999
         - **Auto-Reload (ARR):** 83,999
-        - This gives you a 1Hz trigger with 84MHz APB1 clock (84,000,000/1,000 = 84,000Hz timer, ARR 83,999 = 1s). Check out [this guide](Timer_PrescalerMath) to figure out how one sets timer parameters.
+        - This gives you a 1Hz trigger with 84MHz APB1 clock (84,000,000/1,000 = 84,000Hz timer, ARR 83,999 = 1s). Check out <a href="Timer_PrescalerMath.md">this guide</a> to figure out how one sets timer parameters.
 4. **Enable TIM2 global interrupt** in the NVIC tab (important for interrupt demonstration).
 
 ![Timer2 Config](assets/P5/Timer2Config.png)
@@ -402,11 +402,14 @@ int main(void) {
 	
 	int16_t ax, ay, az;
 	
-	while (1) {
-			MPU6050_Read_Accel(&ax, &ay, &az);	
-			printf("AX: %d, AY: %d, AZ: %d\r\n", ax, ay, az);
-			HAL_Delay(500); // 2 Hz sampling
-		}
+	while (1) 
+	{
+	
+	MPU6050_Read_Accel(&ax, &ay, &az);	
+	printf("AX: %d, AY: %d, AZ: %d\r\n", ax, ay, az);
+	HAL_Delay(500); // 2 Hz sampling
+		
+	}
 }
 ```
 
@@ -453,19 +456,19 @@ I have none of these devices at hand right now, so'll simply transmit SPI messag
 
 ## What We'll Need:
 
-- An STM32F103 BluePill & An ST-Link Programmer
+**An STM32F103 BluePill & An ST-Link Programmer**
 
 ![BP_STLink](assets/P5/BluePill_STLink.jpeg)
 
-- An MPU6050
+**An MPU6050**
 
-<img src="MPU2.jpeg" alt="MPU" style="width:50%; height:auto;">
+![BP_STLink](assets/P5/MPU2.jpeg)
 
-- An STM32F407 Discovery Board
+**An STM32F407 Discovery Board**
 
 ![Disc](assets/P5/DiscBoard.jpeg)
 
-- A USB-UART Bridge
+ **A USB-UART Bridge**
 
 ![Bridge](assets/P5/USBBridge.jpeg)
 
