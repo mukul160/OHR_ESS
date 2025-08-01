@@ -93,7 +93,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 - Bounces (multiple interrupts during rapid mechanical movement of the button) within the 200ms debounce interval are ignored
 
 
-**Build and Run. Here's what you'll see:
+**Build and Run. Here's what you'll see:**
 
 ![Output1](assets/P5/Output1.gif)
 
@@ -265,7 +265,7 @@ while (1)
 - Communication is fully interrupt-driven; the main loop is free for other code.
 
 ![USART Output](assets/P5/USART_Output.png)
-*Figure: "Systems Online" is sent over UART2 upon startup. It's kind of difficult to make it out here, but in the table on the right, we have "Systems Online" spelled out. *
+Figure: "Systems Online" is sent over UART2 upon startup. It's kind of difficult to make it out here, but in the table on the right, we have "Systems Online" spelled out.
 
 ## Notes
 
@@ -300,7 +300,7 @@ This tutorial walks you through reading accelerometer data from the MPU6050 IMU 
    - Enable I2C1 in "I2C" mode.
    - Set PB6 as SCL and PB7 as SDA.
 
-1. **Enable USART2 for Viewing Your Output
+1. **Enable USART2 for Viewing Your Output**
    - Enable USART2 in async mode.
    - Set PA2 (TX) and PA3 (RX).
    - Set baud rate to 115200.
@@ -318,6 +318,7 @@ The **MPU6050** uses I2C protocol and has the following relevant registers:
 | WHO_AM_I     | `0x75`        | Returns device ID   |
 | PWR_MGMT_1   | `0x6B`        | Wake up device      |
 | ACCEL_XOUT_H | `0x3B`        | Start of accel data |
+
 You can find more information about the MPU6050's registers from this reference manual:
 [MPU6050 Reference Manual PDF](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf)
 
@@ -421,13 +422,14 @@ int __io_putchar(int ch) {
 ### Build and Run.
 ![MPU](assets/P5/MPU.jpeg)
 
-**Important: Unlike the Arduino, the STM32F4 does not have a USB-UART bridge built-in. What this means is - You'll need a USB-UART bridge to actually see any incoming UART data.
+**Important: Unlike the Arduino, the STM32F4 does not have a USB-UART bridge built-in. What this means is - You'll need a USB-UART bridge to actually see any incoming UART data.**
 
-**In the previous experiment, I simply used the logic analyzer to gauge the UART2 line.
+**In the previous experiment, I simply used the logic analyzer to gauge the UART2 line.**
 
-**Open a serial terminal to see your UART output. If you have the Arduino IDE, you can use *its* serial viewer too. 
+**Open a serial terminal to see your UART output. If you have the Arduino IDE, you can use *its* serial viewer too.** 
 
 ![MPU_Acc](assets/P5/MPU_Acc.png)
+
 *Figure: Raw Accelerometer Data. Don't worry about what this data means just yet.*
 
 ## What Can I Build With This?
@@ -451,19 +453,19 @@ I have none of these devices at hand right now, so'll simply transmit SPI messag
 
 ## What We'll Need:
 
-**- An STM32F103 BluePill & An ST-Link Programmer
+- An STM32F103 BluePill & An ST-Link Programmer
 
 ![BP_STLink](assets/P5/BluePill_STLink.jpeg)
 
-**- An MPU6050
+- An MPU6050
 
 <img src="MPU2.jpeg" alt="MPU" style="width:50%; height:auto;">
 
-**- An STM32F407 Discovery Board
+- An STM32F407 Discovery Board
 
 ![Disc](assets/P5/DiscBoard.jpeg)
 
-**- A USB-UART Bridge
+- A USB-UART Bridge
 
 ![Bridge](assets/P5/USBBridge.jpeg)
 
@@ -480,7 +482,7 @@ On the Blue Pill, We'll use I2C to read data from the MPU6050 like in the previo
 	
 	![ClockConfig](assets/P5/ClockConfig.png)
 
-	- Edit the Timer2 Config like in this image. Note the Prescaler and Counter Period fields. Those values give us an interrupt every 100 miliseconds when the core's running at 72 MHz. The intervals are calculated according to [this expression.](Timer_PrescalerMath)
+	- Edit the Timer2 Config like in this image. Note the Prescaler and Counter Period fields. Those values give us an interrupt every 100 miliseconds when the core's running at 72 MHz. The intervals are calculated according to <a href="Timer_PrescalerMath.md">this expression.</a>
 	- Enable the TIM2 global interrupt. 
 	
 	![Tim2 Config](assets/P5/Timer2_SPI.png)
@@ -671,9 +673,9 @@ If you're okay with spending $30, you can find a genuine programmer [here.](http
 
 OR
 
-Check out [this guide](Flashing%20The%20Blue%20Pill%20With%20A%20Cheap%20STLink%20Clone.md) to learn how you can flash your Blue Pill without the STM32CubeIDE.
+Check out <a href="Flashing%20The%20Blue%20Pill%20With%20A%20Cheap%20STLink%20Clone.md">this guide</a> to learn how you can flash your Blue Pill without the STM32CubeIDE.
 
-### *Important note on flashing the BP
+### Important note on flashing the BP
 Before running the ST-Flash write, place your boot jumper to position 1 so that the BP can be pulled to its flash mode. When flashing is done, place the boot jumper back to position 0 and hit the reset button on the BP. The flashed binary will then start executing.
 
 ![BP_Flash](assets/P5/BP_Flash.jpeg)
@@ -745,20 +747,20 @@ void HAL_SPI_RxCpltCallback(SPI_HandleTypeDef *hspi) {
 int main(void)
 {
 
-	HAL_Init();
-	SystemClock_Config();
-	MX_GPIO_Init();
-	MX_I2C1_Init();
-	MX_I2S3_Init();
-	MX_SPI1_Init();
-	MX_USB_HOST_Init();
-	MX_USART2_UART_Init();
-	HAL_SPI_Receive_IT(&hspi1, &spi_rx, 1); // Non-blocking, triggers interrupt on complete
+HAL_Init();
+SystemClock_Config();
+MX_GPIO_Init();
+MX_I2C1_Init();
+MX_I2S3_Init();
+MX_SPI1_Init();
+MX_USB_HOST_Init();
+MX_USART2_UART_Init();
+HAL_SPI_Receive_IT(&hspi1, &spi_rx, 1); // Non-blocking, triggers interrupt on complete
 
-	while (1)
-	  {
-		MX_USB_HOST_Process();
-	  }
+while (1)
+  {
+	MX_USB_HOST_Process();
+  }
 }
 ```
 
@@ -923,6 +925,7 @@ while (1) {
 ### Build and Run (Again, Flashing the BP Sucks),
 
 Open Up a Serial Terminal
+
 ![ADC_Output](assets/P5/ADC_Output.png)
 
 You can modify this example to add features like interrupt-driven UART, or data logging based on ADC input.
@@ -938,16 +941,16 @@ You can modify this example to add features like interrupt-driven UART, or data 
 - **Duty cycle** is the ratio of the ON time to the total period, expressed as a percentage (0% to 100%).
 
 ![PWM_Setup](assets/P5/50DutyCycle.png)
-*1KHz, 50% Duty Cycle
+*1KHz, 50% Duty Cycle*
 
 ![Image](assets/P5/75DutyCycle.png)
-*1KHz, 75% Duty Cycle
+*1KHz, 75% Duty Cycle*
 
 - In this experiment, the duty cycle is continuously varied—forming a ramp or sawtooth pattern—which can be visualized using a logic analyzer.
 
 ### Pin Connections
 
-- **PWM Output Pin:** By default, **TIM2_CH1** maps to **PA0. 
+- **PWM Output Pin:** By default, **TIM2_CH1** maps to **PA0**. 
 
 - **Logic Analyzer:** Connect a logic analyzer probe to PA0 (you may ground one probe to a board GND pin).
 
@@ -975,7 +978,7 @@ You can modify this example to add features like interrupt-driven UART, or data 
     - Enable Auto-Reload Preload
 
 ![PWM_Setup](assets/P5/PWM_Config.png)
-*Timer 2 PWM Configuration
+Timer 2 PWM Configuration
 
 ### Code Blocks
 
@@ -1014,13 +1017,13 @@ while (1)
 
 This ramp system smoothly varies the duty cycle from 0% up to 100% and back down, creating a “fading” PWM output: ideal for logic analyzer visualization.
 
-### **Build and Run
+### **Build and Run**
 
 ![Image](assets/P5/T1.jpeg)
-*At t = 627 ms, Duty Cycle = 94%
+*At t = 627 ms, Duty Cycle = 94%*
 
 ![Image](assets/P5/T2.jpeg)
-*At t = 845 ms, Duty Cycle = 20%
+*At t = 845 ms, Duty Cycle = 20%*
 
 ## What Can You Build With This?
 
