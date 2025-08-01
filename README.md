@@ -56,11 +56,10 @@ This is a read-first, code-later course. To follow along:
 > Bonus: Code samples are provided in `/Module_1/CodeExamples` and written for the STM32F103 (Blue Pill), and the STM32F407 Discovery Board.
 
 ---
-## Credits and Licensing
+## Credits
 
 - Diagrams created using Excalidraw / draw.io / Figma.
 - Reference material pulled from STMicroelectronics' official datasheets.
-- All original content is licensed under **MIT License** unless otherwise noted.
 
 ---
 ## Why This Exists
