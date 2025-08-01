@@ -242,9 +242,9 @@ if (status & (1 << 3)) {
 
 **Explanation:**
 
-`Before: 0b00000000  
-`1 << 2: 0b00000100  
-`Result: 0b00000100
+`Before: 0b00000000`  
+`1 << 2: 0b00000100`  
+`Result: 0b00000100`
 
 #### 4. Bitwise AND with NOT (`& ~`)
 
