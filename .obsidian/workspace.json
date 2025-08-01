@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b35c5c772435618e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Module_2/P1_Choosing a Microcontroller Family..md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "P1_Choosing a Microcontroller Family."
-            }
-          },
-          {
             "id": "e7ceadd258f1b633",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Module_2/P1_Choosing a Microcontroller Family..md",
+                "file": "Module_2/Learning Outcomes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "P1_Choosing a Microcontroller Family."
+              "title": "Learning Outcomes"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -183,16 +168,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "84fb488a05e08a99",
+  "active": "e7ceadd258f1b633",
   "lastOpenFiles": [
-    "Module_1/P2_AnatomyOfAMicrocontroller.md",
-    "Module_2/P5_Embedded Engineering In Practice.md",
-    "Module_2/P4_Becoming Familiar With the Embedded Workflow.md",
-    "Module_2/P3_Introduction to the STM32CubeIDE.md",
-    "Module_2/P2_Introduction to the Embedded Toolchain.md",
-    "Module_2/P1_Choosing a Microcontroller Family..md",
-    "Module_2/Learning Outcomes.md",
     "Module_2/Flashing The Blue Pill With A Cheap STLink Clone.md",
+    "Module_2/Learning Outcomes.md",
+    "Module_2/P1_Choosing a Microcontroller Family..md",
+    "Module_2/P2_Introduction to the Embedded Toolchain.md",
+    "Module_2/P3_Introduction to the STM32CubeIDE.md",
+    "Module_2/P4_Becoming Familiar With the Embedded Workflow.md",
+    "Module_2/P5_Embedded Engineering In Practice.md",
+    "Module_1/P2_AnatomyOfAMicrocontroller.md",
     "Module_2/Timer_PrescalerMath.md",
     "Module_1/P1_WhatIsBareMetalProgramming.md",
     "README.md",
