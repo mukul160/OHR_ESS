@@ -35,12 +35,12 @@ Let’s start by setting up a clean project:
 5. Name your project something like _LED_Blink_Manual_
 6. When prompted to initialise peripherals via CubeMX, decline. 
 
-**Configure Project Settings
+**Configure Project Settings**
 
 - Toolchain: STM32CubeIDE
 - Language: C
 
-**Click Finish. STM32CubeIDE will generate:
+**Click Finish. STM32CubeIDE will generate:**
 
 - A startup file
 - A linker script
@@ -183,7 +183,7 @@ while (1) {
 }
 ```
 
-**You'll see that it works. Of course, I did this in a needlessly arcane fashion. But now, I've taken you through the embedded workflow. You may use this process to learn microcontrollers which don't have a thriving ecosystem like the STM32.
+**You'll see that it works. Of course, I did this in a needlessly arcane fashion. But now, I've taken you through the embedded workflow. You may use this process to learn microcontrollers which don't have a thriving ecosystem like the STM32.**
 
 ![Output](assets/P4/Output2.gif)
 
