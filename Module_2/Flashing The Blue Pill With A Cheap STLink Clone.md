@@ -1,4 +1,6 @@
 
+## Flashing The Blue Pill With A Cheap STLink Clone
+
 - If you try to connect and try to flash a Blue Pill via an ST-Link clone (the ones widely available in grift marts online), you'll be forced into a firmware update that locks out devices with a specific internal ID which is unauthorised by ST.
 - It seems as if we're out of luck. STM32CubeIDE is such an incredibly powerful tool, but if I can't get hold of a relatively expensive programmer, I can't program boards which are not officially distributed by STMicroelectronics.   
 - Thankfully, here's where the st-flash utility comes to our rescue. 
