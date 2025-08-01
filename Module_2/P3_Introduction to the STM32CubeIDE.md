@@ -37,7 +37,7 @@ Think of STM32CubeIDE as a Swiss Army knife with rocket fuel. It bundles:
 
 ![Webpage](assets/P3/STMWeb.png)
 *Figure: The CubeIDE Landing Page. Link Below*
-**https://www.st.com/en/development-tools/stm32cubeide.html
+https://www.st.com/en/development-tools/stm32cubeide.html
 
 ![Webpage](assets/P3/STM32Down.png)
 *Figure: Download Options. I'm running on a Linux machine.*
@@ -66,9 +66,9 @@ Let's set the stage:
 ![Webpage](assets/P3/S2.png)
 *Figure: When a new STM32 project is requested, the IDE prompts you to choose your dev board/ microcontroller.*
 
->**I am using ST's official Discovery board as opposed to any thrid party board. The "Blue Pill", which I've spoken about previously is not officially distributed by ST Microelectronics.
+>**I am using ST's official Discovery board as opposed to any thrid party board. The "Blue Pill", which I've spoken about previously is not officially distributed by ST Microelectronics.**
 
->**If I was working with the Blue Pill, I would've chosen the MCU selector tab as opposed to the Board Selector. 
+>**If I was working with the Blue Pill, I would've chosen the MCU selector tab as opposed to the Board Selector.** 
 
 ![Webpage](assets/P3/S3.png)
 *Figure: Type in your project name. You usually don't need to touch anything else here.*
@@ -80,7 +80,7 @@ Let's set the stage:
 - STM32Cube will auto-configure the relevant RCC and clock settings
 
 ![Webpage](assets/P3/S4.png)
-*Figure: This Discovery board is initialised with many a pin configured in their default state. You can change that by clicking on them and choosing what you'd like to do with them. *
+Figure: This Discovery board is initialised with many a pin configured in their default state. You can change that by clicking on them and choosing what you'd like to do with them.
 
 ### 3. Generate Code
 
@@ -89,6 +89,7 @@ Let's set the stage:
 - Click "GENERATE" and boom — you’ve got a working project scaffold
 
 ![Webpage](assets/P3/S6.png)
+
 *Figure: Perhaps it is now clear just how massive these project trees really are. All of this is to ensure you have an easy time simply writing your sketch for your application without worrying about the tortuous setup.*
 
 ## Understanding What Just Happened
@@ -138,9 +139,11 @@ HAL_Delay(500); // 500 ms delay
 4. If it doesn’t — welcome to embedded systems.
 
 ![Webpage](assets/P3/ConsoleSS.png)
+
 *Figure: Upon clicking "Run" from the upper menu.*
 
 ![Webpage](assets/P3/output.gif)
+
 *And Away We Go*
 
 ### Peek Behind the Scenes
