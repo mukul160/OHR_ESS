@@ -7,6 +7,7 @@
  <li><a href="P4_Datasheets&RefManuals.md">P4_Datasheets&RefManuals</a></li> 
  <li><a href="P5_ToolchainOverview.md">P5_ToolchainOverview</a></li>
 </ul>
+
 # CODE EXAMPLES
 
 > **Note:** Register names are from the STM32F1 reference manual, so it's crucial to have the [STM32F103x8 Reference Manual](https://www.st.com/resource/en/reference_manual/cd00171190.pdf) open while reading.
