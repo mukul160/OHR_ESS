@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Module_2/Flashing The Blue Pill With A Cheap STLink Clone.md",
+                "file": "Module_2/Timer_PrescalerMath.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Flashing The Blue Pill With A Cheap STLink Clone"
+              "title": "Timer_PrescalerMath"
             }
           }
         ]
@@ -170,8 +170,8 @@
   },
   "active": "e7ceadd258f1b633",
   "lastOpenFiles": [
-    "Module_2/Learning Outcomes.md",
     "Module_2/Flashing The Blue Pill With A Cheap STLink Clone.md",
+    "Module_2/Learning Outcomes.md",
     "Module_2/P1_Choosing a Microcontroller Family.md",
     "Module_2/P2_Introduction to the Embedded Toolchain.md",
     "Module_2/P3_Introduction to the STM32CubeIDE.md",
