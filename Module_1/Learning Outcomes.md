@@ -8,6 +8,7 @@
   <li><a href="CodeExamples.md">CodeExamples</a></li>
 </ul>
 ---
+
 # Learning Outcomes – Module 1: Foundations of Bare-Metal Programming
 
 By the end of this module, you’ll be able to:
